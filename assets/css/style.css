@@ -1,0 +1,111 @@
+/* css reset */
+:root {
+    --color-primary: #fff;
+    --color-tertiary: #f79f33;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+p,
+ul {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+i {
+    color: var(--color-tertiary);
+}
+
+:target::before {
+    content: "";
+    display: block;
+    height: 50px;
+    margin: -50px 0 0;
+}
+
+.slick-slider .slick-slide {
+    margin: 0 15px;
+}
+
+/* ......... */
+
+.navbar-nav {
+    gap: 20px;
+}
+
+.navbar button,
+.navbar button:active,
+.navbar button:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.banner {
+    margin-top: 55px;
+}
+
+.banner .content {
+    background: #6C5CE7;
+}
+
+section .header {
+    margin: 5rem;
+    min-width: 80%;
+    height: 50px;
+    background-color: var(--color-tertiary);
+    transform: skewX(-30deg);
+}
+
+section .header h4 {
+    margin-bottom: 0;
+    transform: skewX(30deg);
+    width: 90%;
+    border-bottom: 3px solid var(--color-primary);
+    line-height: 0.1em;
+}
+
+section .header h4 span {
+    background: var(--color-tertiary);
+    padding: 0 20px;
+}
+
+section ul {
+    list-style-type: '◆ ';
+    padding-left: 15px;
+}
+
+section .brands img {
+    width: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.live-chat {
+    right: 10px;
+    bottom: 10px;
+    padding: 7px 14px;
+    background: #25d366;
+    font-size: 25px;
+}
+
+.back-to-top {
+    left: 10px;
+    bottom: 10px;
+    padding: 10px 15px;
+    background-color: var(--color-tertiary);
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        gap: 5px;
+    }
+}
