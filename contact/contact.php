@@ -15,8 +15,8 @@ try {
     $mail->isSMTP();
     $mail->Host = 'smtp.hostinger.in';
     $mail->SMTPAuth = true;
-    $mail->Username = 'info@solvemypc.in';
-    $mail->Password = 'solvemy@PC#2016';
+    $mail->Username = '';
+    $mail->Password = '';
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
 
